@@ -1,0 +1,241 @@
+/*CLASES REUTILIZABLES*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family:'Josefin Sans', sans-serif;
+
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+
+}
+
+img {
+  vertical-align: middle; /*se coloca al medio del elemnto principal*/
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table; /*hace que su contenido se comporte como una tabla*/
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container:after {
+  clear: both;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+
+.sub-header{  /*el menu esta dentro de la clase box-header*/
+  display:inline-block; /*para que se ponga en linea*/
+  position: relative;
+  /*outline: 1px solid red;*/
+  left:10%; /*a la derecha el 10% de su contenedor*/
+}
+
+figure{
+  display: inline-block; /*para que el logo sea posicione a la misma altura del menu*/
+  /*outline: 1px solid blue;*/
+  position: relative;
+  left:50%;
+}
+
+ img{ /*medidas del logo*/
+  width: 70px;
+  height: 70px;
+}
+
+header{
+  /*outline: 1px solid green;*/
+  background: #fff;
+  position: fixed; /*parq que posicione fijo en relacion a navegador*/
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 2; /*indica que cuando un elemnto este encima este va encima ya que tiene el mayor valor*/
+}
+
+.sub-header a{
+  /*outline: 1px solid yellow;*/
+  padding: 30px;
+  font-weight: bold; /*para que el texto sea mas grueso*/
+}
+
+ .partfirst {
+  padding-top: 6%;
+  position: relative;
+  top:100px;/*con top baje el contenedor ya que se posicionaba al principio de navegador ya que box header se hizo absolute*/
+  height: 500px;
+  text-align: center; /*para centrar el texto*/
+  background-image: url("../assets/images/bg-home.jpg");/*poner como fondo una imagen*/
+  background-repeat: no-repeat;
+  color:#fff;
+}
+ h1{
+   font-size: 45px;
+   margin-bottom: 0px;
+ }
+
+ .partfirst div p{
+   margin-top: 0;
+ }
+
+ .partfirst div a{
+   background: #2ecc71;
+   color:#fff;
+   padding:15px;
+   position: relative;
+   top:60px;
+ }
+
+.part-two{
+  background-color: #f17c72;
+  position: relative;
+  top:100px; /*para bajar el contenedor*/
+  padding:0;
+  color:#fff;
+  text-align: center;
+}
+
+.services h2, .section-three h2{
+  margin-top: 60px;
+}
+
+.services{
+  display: table; /*para hacer una tabla*/
+  /*outline: 1px solid green;*/
+}
+
+h5{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+h6{
+ margin:0;
+}
+
+.list-one,.list-two,.list-three{
+  display: table-cell;/*son las filas de la tabla */
+  /*outline: 1px solid blue;*/
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.list-one img, .list-two img , .list-three img{
+  width: 200px;
+  height: 200px;
+}
+
+.part-three{
+  /*outline: 1px solid red;*/
+  position: relative;
+  top:100px;
+  text-align: center;
+}
+
+.part-three div img{
+  width: 900px;
+  height: 900px;
+}
+/* IMAGENES */
+#work {
+  width: 900px;
+  height: 700px;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  right:500px;
+  top: 10px;
+  text-align: center;
+
+}
+
+h2,h4 {
+  position: relative;
+  top: 130px;
+  margin:5px;
+  text-align: center;
+
+
+}
+
+li {
+
+  display: inline-block;
+  /*outline: 1px solid red;*/
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  left: 100px;
+}
+
+ul img {
+  display: inline-block;
+  padding: 30px;
+  list-style: none;
+  width: 330px;
+  height: 330px;
+
+
+
+  /*outline: 1px solid yellow;*/
+
+}
+footer{
+  /*outline: 1px solid blue;*/
+  position: relative;
+  top:100px;
+  background: #373b47;
+  color:#fff;
+  text-align: center;
+}
