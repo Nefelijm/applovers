@@ -6,8 +6,8 @@
      2. OBJETIVO:
           Crear una replica cuyo resultado sea la siguiente imagen:
 
-                ![AppLove-gif](https://fotos.subefotos.com/da068e44cb72b36ba6c4458130c00185o.gif)
-
+                ![recuros](https://fotos.subefotos.com/da068e44cb72b36ba6c4458130c00185o.gif)
+                
      3. DESCRIPCION:
 
 
@@ -20,7 +20,7 @@
 
 
      4. HERRAMIENTAS:
-     
+
         HTML5 Y CSS3
 
 
