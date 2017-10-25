@@ -75,7 +75,7 @@ a:hover {
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
-.sub-header{  /*el menu esta dentro de la clase box-header*/
+.sub-header{  /*el menu esta dentro de la clase sub-header*/
   display:inline-block; /*para que se ponga en linea*/
   position: relative;
   /*outline: 1px solid red;*/
@@ -100,7 +100,8 @@ header{
   position: fixed; /*parq que posicione fijo en relacion a navegador*/
   left:50%;
   transform: translateX(-50%);
-  z-index: 2; /*indica que cuando un elemnto este encima este va encima ya que tiene el mayor valor*/
+  z-index: 2; /*Cuanto mas valor tenga el elmento ira encima del otro
+  elemento*/
 }
 
 .sub-header a{
@@ -112,7 +113,8 @@ header{
  .partfirst {
   padding-top: 6%;
   position: relative;
-  top:100px;/*con top baje el contenedor ya que se posicionaba al principio de navegador ya que box header se hizo absolute*/
+  top:100px;/*con top baje el contenedor ya que se posicionaba
+   al principio de navegador ya que sub-header se hizo absolute*/
   height: 500px;
   text-align: center; /*para centrar el texto*/
   background-image: url("../assets/images/bg-home.jpg");/*poner como fondo una imagen*/
@@ -199,7 +201,9 @@ h6{
   text-align: center;
 
 }
-
+/*como se va cumplir la misma funcion
+y estos dos elementos son hermanos entonces solo basta con contenarlos y podemos
+sarle las propiedad en uno solo*/
 h2,h4 {
   position: relative;
   top: 130px;
@@ -218,16 +222,14 @@ li {
   position: relative;
   left: 100px;
 }
-
+/* Aqui estamos elgiiendo al elemento img que esta dentro de ul
+quin a su vez es el contenedor*/
 ul img {
   display: inline-block;
   padding: 30px;
   list-style: none;
   width: 330px;
   height: 330px;
-
-
-
   /*outline: 1px solid yellow;*/
 
 }
